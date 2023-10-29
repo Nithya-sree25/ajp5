@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="s2.css" >
+    </head>
+    <body>
+        <div class="order" id="Order">
+            <h1> Order Successful</h1>
+            <div class="order_main">
+                <div class="order_image">
+                    <img src="order_image.png">
+                </div>
+                <form action="#">
+                    
+                        Name:&nbsp;<span th:text="${frm.name}"></span>
+                        Email:&nbsp;<span th:text="${frm.email}"></span>
+                        Birthday:&nbsp;<span th:text="${frm.birthday}"></span>
+                        Gender:&nbsp;<span th:text="${frm.g1}"></span>                  
+                        order:&nbsp;<span th:text="${frm.veg}"></span>                    
+                        Items:&nbsp;<span th:text="${frm.feedback}"></span>                   
+                        Location:&nbsp;<span th:text="${frm.location}"></span>
+                  
+                </form>
+            </div>
+        </div>    
+    </body>
+</html>
